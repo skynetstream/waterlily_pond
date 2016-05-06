@@ -1,0 +1,28 @@
+{application, waterlily_pond,
+ [{description, "An OTP library"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { waterlily_pond, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,
+      [{pools, 
+          [{monet_pool,
+              [{size, 10}
+              ,{max_overflow, 50}],
+              [{host, "127.0.0.1"}
+              ,{port, 50000}
+              ,{database, "voc"}
+              ,{username, "monetdb"}
+              ,{password, "monetdb"}
+              ]}
+           ]}
+       ]},
+  {modules, [waterlily_pond]},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.

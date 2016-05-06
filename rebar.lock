@@ -1,0 +1,8 @@
+[{<<"poolboy">>,
+  {git,"https://github.com/devinus/poolboy",
+       {ref,"3bb3972617b3706b7fda6e264bf6bdaefbb833cd"}},
+  0},
+ {<<"waterlily">>,
+  {git,"git@bitbucket.org:inou/waterlily.git",
+       {ref,"8202136a5f1d7ad5bd89f30f9bcd332ad4bd0b91"}},
+  0}].
