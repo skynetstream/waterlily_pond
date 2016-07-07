@@ -1,9 +1,9 @@
 -module(waterlily_pond_sup).
+-behaviour(supervisor).
 
 -export([init/1]).
 
 init([]) ->
-    io:format("suppp"),
     {ok, [Pool]} = application:get_env(waterlily_pond, pools),
     {Name, SizeArgs, WorkerArgs} = Pool,
     PoolArgs = [{name, {local, Name}}
